@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="BorderPane" fx:id="listPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="views.List">
+  <center>
+    <VBox fillWidth="true" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+      <children>
+        <Text id="Title" strokeType="OUTSIDE" strokeWidth="0.0" text="Timezones:" textAlignment="CENTER" VBox.vgrow="NEVER" />
+        <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+          <content>
+            <VBox prefHeight="-1.0" prefWidth="-1.0">
+              <children>
+                <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+                  <children>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <Button mnemonicParsing="false" text="Edit" />
+                  </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+                  <children>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <Button mnemonicParsing="false" text="Edit" />
+                  </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+                  <children>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <Button mnemonicParsing="false" text="Edit" />
+                  </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+                  <children>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <Button mnemonicParsing="false" text="Edit" />
+                  </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0" spacing="10.0">
+                  <children>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                    <Button mnemonicParsing="false" text="Edit" />
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+          </content>
+        </ScrollPane>
+      </children>
+    </VBox>
+  </center>
+  <top>
+    <HBox alignment="CENTER" prefHeight="50.0" prefWidth="-1.0" spacing="10.0" BorderPane.alignment="CENTER">
+      <children>
+        <Button mnemonicParsing="false" text="New" />
+        <Button mnemonicParsing="false" onAction="#returnToWidget" text="OK" />
+      </children>
+    </HBox>
+  </top>
+</BorderPane>

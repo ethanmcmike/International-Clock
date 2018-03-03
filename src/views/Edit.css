@@ -1,0 +1,15 @@
+AnchorPane{
+    -fx-background-color: #333333; 
+}
+
+.button{
+    -fx-font-size: 12;
+}
+
+#Title{
+    -fx-font-size: 16;
+}
+
+Text{
+    -fx-font-size: 12;
+}
