@@ -18,7 +18,6 @@ public class List extends Controller{
         
         stage.setScene(scene);
         stage.centerOnScreen();
-//        stage.show();
     }
     
     public void returnToWidget(){
