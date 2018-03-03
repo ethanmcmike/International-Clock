@@ -4,7 +4,6 @@ import javafx.application.Application;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import static main.Controller.LIST;
 import static main.Controller.WIDGET;
 
 public class Main extends Application{
