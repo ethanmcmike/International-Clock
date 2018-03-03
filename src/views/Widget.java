@@ -20,6 +20,7 @@ public class Widget extends Controller implements Runnable{
     private RendererManager renderer;
     
     private Thread thread;
+    private int h;
     
     @FXML BorderPane clockBorderPane;
     
