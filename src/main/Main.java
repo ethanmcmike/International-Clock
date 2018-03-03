@@ -14,6 +14,7 @@ public class Main extends Application{
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.getIcons().add(new Image("res/icon.png"));
         stage.setResizable(false);
+        stage.show();
         
         Controller controller = new Controller();
         controller.loadScene(stage, WIDGET);

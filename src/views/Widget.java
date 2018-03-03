@@ -39,10 +39,9 @@ public class Widget extends Controller implements Runnable{
         
         Scene scene = new Scene(clockBorderPane);
         scene.setFill(Color.TRANSPARENT);
-        
-        stage.close();
+
         stage.setScene(scene);
-        stage.show();
+        stage.centerOnScreen();
         
         start();
     }

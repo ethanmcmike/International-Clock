@@ -35,15 +35,11 @@ public class RendererManager{
     }
     
     private void initGraphics(){
-//        gc.translate(size/2, size/2);
+        gc.translate(size/2, size/2);
         gc.setLineCap(StrokeLineCap.ROUND);
     }
     
     public void render(){
-        
-        
-        gc.clearRect(0, 0, size, size);
-
         renderer.render();
     }
     

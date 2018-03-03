@@ -16,10 +16,9 @@ public class List extends Controller{
         
         Scene scene = new Scene(listPane);
         
-        stage.close();
         stage.setScene(scene);
         stage.centerOnScreen();
-        stage.show();
+//        stage.show();
     }
     
     public void returnToWidget(){

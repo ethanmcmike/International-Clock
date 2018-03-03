@@ -12,28 +12,31 @@ import model.Timezone;
 
 public class RendererFlag extends Renderer{
     
+    //Ratios relative to size
+    private final double rClock = 0.5;
+    
     public RendererFlag(GraphicsContext gc, int size, Clock clock){
         super(gc, size, clock);
     }
     
+    @Override
     public void render(){
-        
+        background();
+        clock();
+        timezones();
     }
     
     @Override
     protected void background(){
         gc.clearRect(-size/2, -size/2, size, size);
         
-        gc.setFill(Color.RED);
-        gc.fillRect(0, 0, size, size);
-        
         //Circle
         gc.setFill(Color.gray(0.5));
-//        gc.fillOval(-size/4, -size/4, size/2, size/2);
+        gc.fillOval(-size/4, -size/4, size/2, size/2);
         
         //Groove
         gc.setFill(Color.gray(0.1));
-        gc.fillArc(size/4, size/4, size/2, size/2, 0, 360, ArcType.OPEN);
+        gc.strokeArc(-size/4, -size/4, size/2, size/2, 0, 360, ArcType.OPEN);
         
         //Main ring
         gc.setLineWidth(1);
@@ -91,6 +94,7 @@ public class RendererFlag extends Renderer{
     
     }
 
+    @Override
     protected void timezones() {
         
         double inner = 0.350;
