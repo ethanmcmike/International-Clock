@@ -44,9 +44,7 @@ public class RendererManager{
         
         gc.clearRect(0, 0, size, size);
 
-        drawBackground();
-        drawLocal();
-        drawTimezones();
+        renderer.render();
     }
     
     private void drawBackground(){

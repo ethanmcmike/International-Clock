@@ -16,6 +16,10 @@ public class RendererFlag extends Renderer{
         super(gc, size, clock);
     }
     
+    public void render(){
+        
+    }
+    
     @Override
     protected void background(){
         gc.clearRect(-size/2, -size/2, size, size);
@@ -25,7 +29,7 @@ public class RendererFlag extends Renderer{
         
         //Circle
         gc.setFill(Color.gray(0.5));
-        gc.fillOval(-size/4, -size/4, size/2, size/2);
+//        gc.fillOval(-size/4, -size/4, size/2, size/2);
         
         //Groove
         gc.setFill(Color.gray(0.1));
